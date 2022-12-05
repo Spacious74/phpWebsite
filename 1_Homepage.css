@@ -1,0 +1,645 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-size: 50%
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 100%;
+    overflow-x: hidden;
+}
+::selection{
+    background-color: black;
+    color: snow;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.btn-grad {background-image: linear-gradient(135deg, #6a83c9 0%, #32d34d  51%, #027fb0  100%)}
+.btn-grad {
+   text-align: center;
+   padding: 10px 20px;
+   width: 130px;
+   margin: 20px 10px 10px 0px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;        
+   font-weight: 600;
+   font-size: 0.8rem;
+   box-shadow: 0 0 20px #eee;
+   border-radius: 3px;
+   display: inline-block;
+   border: solid 1px black;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; 
+   text-decoration: none;
+   box-shadow: 0px 10px 40px rgb(85, 116, 207);
+ }
+
+
+.typewrite{
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+    border-right: solid 2px black;
+}
+.main{
+    margin-top: -65px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 20px;padding-top: 60px;
+    background: url('./images/outlinedvectorback.jpg');
+    /* background: url('./images/pattern6.png'); */
+    background-size: cover;
+    background-blend-mode: color;
+    background-color: rgba(255, 255, 255, 0.61);
+}
+.main .mainimage{
+    width: 60%;
+    text-align: center;  
+    background-color: transparent;
+}
+.mainimage .image{
+    width: 100%;
+}
+.main .text{
+    width: 50%;
+    padding: 30px;
+    font-family: 'Product Sans';
+    background-color: transparent;
+}
+.main .text .heading{
+    font-size: 3rem;
+    color: rgb(20, 20, 20);
+    font-family: century gothic;
+    font-weight: 900;
+}
+.main .text .paratext{
+    font-size: 1.2rem;
+}
+
+
+
+.fancy-undeline {
+    background-image: linear-gradient(120deg, #bac9e4,#85c9c8,#8de9a1 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 1em;
+    background-position: 0 50%;
+    transition: background-size 0.25s ease-in;
+}
+
+.fancy-undeline:hover {
+    background-size: 100% 88% !important;
+}
+
+
+.vandmcontainer{
+    background: linear-gradient(135deg, rgb(130, 130, 243), rgb(231, 111, 231), skyblue);
+    padding: 2rem 0rem;
+    
+}
+.vandm{
+    width: 90%;
+    font-family: 'Product Sans';
+    margin: auto;
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: solid 2px black;
+}
+.vandm .heading{
+    font-size: 35px;
+    padding: 1rem;
+    display: block;
+    width: 100%;
+    font-weight: 600;
+    color: rgb(4, 4, 167);
+    font-family: 'century gothic';  
+    text-align: center;
+}
+.vandm .vmtext{
+    font-size: 1.2rem;
+    padding: 1rem;
+    display: block;
+    margin: auto;
+    text-align: justify;
+    color: black;
+}
+.vandm .vmsection{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    padding: 1rem;
+}
+.vandm .vmsection .heading{
+    font-size: 25px;
+    padding: 0px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.vandm .vmsection .vision{
+    width: 49%;
+    padding: 15px;
+    background: linear-gradient(135deg, rgb(113, 130, 185), rgb(158, 228, 218), rgb(156, 208, 218));
+    /* border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px; */
+    border-radius: 10px;
+}
+
+
+.video{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    font-family: 'Product Sans';
+}
+.video-container{
+    width: 35%;
+    text-align: center;
+}
+
+.imvideo{
+    /* padding: 20px; */
+    width: 100%;
+    height: 100%;
+    margin-right: 10px;
+    border: solid 2px black;
+}
+.videotext{
+    width: 55%;
+    height: 100%;
+    font-size: 1.2rem;
+    text-align: justify;
+    padding: 30px 30px 30px 10px;
+}
+.big{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-align: left;
+    font-family: century gothic;
+}
+
+
+
+.fact-container{
+    width: 100%;
+    font-family: 'Product Sans';
+    padding: 20px 0px 20px 0px;
+}
+.fact-container .factbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 30px 30px 0px 30px;
+}
+.fact-container .facts{
+    font-size: 1.2rem;
+    margin: 0px;
+    width: 60%;
+    padding: 20px;
+    line-height: 30px;
+    display: inline-block;
+}
+.facts li{
+    list-style: none;
+}
+.factbox .factsimage{
+    width: 30%;
+    text-align: center;
+}
+.factsimage .imfactimg{
+    width: 70%;
+}
+
+.slideshowcontainer{
+    padding: 10px 0px 80px 0px;
+    background: url('./images/Background\ Vector\ Image.png');
+    background-size: 100%;
+    /* background-position: center; */
+    background-blend-mode: color;
+    background-color: rgba(255, 255, 255, 0.637);
+}
+.slideshowcontainer .big{
+    width: 85%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    color: black;
+}
+.slideshow{
+    position: relative;
+    left: 0%;
+    height: 400px;
+    width: 60%;
+    margin: 0 auto;
+    border: solid 1px black;
+    border-radius: 6px;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.384);
+}
+.slideshow .slidetrack_container{
+    background-color: cadetblue;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.slideshow  .slidetrack{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 100%;
+    transition: transform 250ms ease-in;   
+}
+.slidetrack .slides{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+.slides .imagetext{
+    font-size: 3rem;
+    font-family: century gothic;
+    
+}
+.slideshow .slideimage{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slideshow .slidebutton{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(19, 18, 18);
+    font-size: 4rem;
+    cursor: pointer;
+    z-index: 6;
+    border: none;
+    background-color: transparent;
+}
+.slideshow .slidebutton:active{
+    color: black;
+}
+.slideshow .leftbutton{
+    left: -19%;
+}
+.slideshow .rightbutton{
+    right: -19%;
+}
+.slideshow .slideshownav{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+.slideshownav .slideindicator{
+    width: 15px;
+    height: 15px;
+    border: none;
+    border-radius: 50%;
+    margin: 0px 3px 0px 3px;
+    background-color: rgb(114, 114, 114);
+    cursor: pointer;
+}
+.slideshownav .currentslide{
+    background-color: black;
+}
+
+
+.data-container{
+    width: 100%;
+    font-family: 'Product Sans';
+    padding: 20px 0px 60px 0px ;
+}
+.data-container .heading{
+    font-size: 3rem;
+    width: 80%;
+    padding: 20px 0px 20px 0px;
+    margin: auto;
+    text-align: center;
+    font-family: century gothic;
+}
+.number{
+    color: rgb(1, 5, 71);
+    font-size: 2rem;
+}
+.data-container .todata{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    text-align: left;
+    margin: auto;
+    background-color: white;
+    border: solid 1px grey; border-radius: 6px;
+    padding: 20px;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.data-container .twodata{
+    width: 81%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+.twodata .adults{
+    width: 49%;
+    font-size: 1.4rem;
+    text-align: center;
+    margin: auto;
+    background-color: white;
+    border: solid 1px grey; border-radius: 6px;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.twodata .childrens{
+    width: 49%;
+    font-size: 1.4rem;
+    text-align: center;
+    margin: auto;
+    background-color: white;
+    border: solid 1px grey; border-radius: 6px;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.twodata .vectorimage{
+    width: 40%;
+}
+
+
+.areasofserve{
+    width: 100%;
+    font-family: 'Product Sans';
+    padding: 20px 0px 40px 0px;
+}
+.areasofserve .heading{
+    width: 85%;
+    margin: auto;
+    padding: 20px;
+    font-size: 3rem;
+    text-align: center;
+    font-family: century gothic;
+}
+.mapandtext{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.mapandtext .framemap{
+    width: 90%;
+    height: 25rem;
+    margin: auto;
+    border: solid 1px grey;
+}
+.mapandtext .map{
+    width: 50%;
+}
+.mapandtext .maptext{
+    font-size: 1.4rem;
+    width: 40%;
+    background: url('./images/maplogo.png');
+    background-size: cover;
+    padding: 20px;
+}
+.locations{
+    padding: 40px;
+}
+
+
+.iandvhead{
+    font-size: 3rem;
+    text-align: center;
+    width: 85%;
+    margin: auto;
+    font-family: century gothic;
+    padding: 30px 0px 20px 0px;
+}
+.imageandvideo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    margin-bottom: 2rem;
+}
+.imagegallery{
+    width: 45%;
+    border-radius: 6px;
+    text-align: center;
+    border: solid 1px grey;
+    padding: 20px;
+    background: url('./images/imageandvideoback.png');
+    background-size: 120%;
+    background-position: center;
+    background-blend-mode: color;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.733);
+}
+.imagegallery .imimage{
+    width: 52%;
+    padding-bottom: 10px;
+}
+.videoalbum{
+    width: 45%;
+    border-radius: 6px;
+    text-align: center;
+    border: solid 1px grey;
+    padding: 20px;
+    background: url('./images/imageandvideoback.png');
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: color;
+    background-color: rgba(255, 255, 255, 0.74);
+    /* border: solid 2px black; */
+}
+.videoalbum .imimage{
+    width: 68%;
+}
+.imageandvideo .captiontext{
+    font-size: 2rem;
+    font-family: 'Product Sans';
+    text-align: center;
+}
+.album{
+    transition: all 0.3s ease-in-out;
+}
+.album:hover{
+    box-shadow: 0px 10px 30px rgba(45, 46, 34, 0.507);
+}
+.album:active{
+    box-shadow: none;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 900px) {
+    
+   .modal{
+       align-items: flex-start;
+       padding: 0px;
+   }
+   .modal-content{
+       width: 85%;
+   }
+   .donationformcontainer .imdonationform{
+       width: 85%;
+   }
+   /* .donationformcontainer .flexform{
+       flex-direction: column;
+   } */
+   
+   .main{
+       flex-direction: column-reverse;
+       justify-content: space-around;
+   }
+   .main .mainimage{
+    width: 100%;
+    margin-top: 30px;
+   }
+   .main .text{
+       width: 100%;
+       margin-top: -20px;
+       text-align: left;
+       padding: 20px;
+   }
+   .vandm .vmsection{
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+   }
+    .vandm .vmsection .vision{
+       width: 100%;
+       margin-bottom: 20px;
+   }
+   .data-container .twodata{
+    width: 81%;
+    display: block;
+    }
+    .data-container .todata{
+        flex-direction: column;
+        
+    }
+    .twodata .childrens{
+        width: 100%;
+    }
+    .twodata .adults{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .slideshow{
+        position: relative;
+        height: 350px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .slideshowcontainer .big{
+        font-size: 2.3rem;
+    }
+    .slideshow .slidebutton{
+        font-size: 2rem;
+        color: black;
+        transform: translateY(460%);
+        height: 40px;
+        font-weight: normal;
+    }
+    .slideshow .leftbutton{
+        left: 7%;
+    }
+    .slideshow .rightbutton{
+        right: 7%;
+    }
+    
+    .video{
+        flex-direction: column-reverse;
+        padding: 20px 0px 20px 0px;
+        height: 100%;
+    }
+    .video-container{
+        width: 100%;
+        padding: 20px;
+    }
+    .videotext{
+        width: 100%;
+        padding: 2rem;
+    }
+    .imvideo{
+        width: 90%;
+        height: 100%;
+        border: solid 5px black;
+    }
+    .fact-container .factbox{
+        flex-direction: column;
+    }
+    .factbox .facts{
+        width: 100%;
+        line-height: normal;
+        padding: 10px 0px 20px 0px ;
+        text-align: justify;
+    }
+    .factbox .factsimage{
+        width: 80%;
+    }
+    .factsimage .imfactimg{
+        width: 100%;
+    }
+    .mapandtext{
+        flex-direction: column;
+    }
+    .mapandtext .map{
+        width: 100%;
+        text-align: center;
+    }
+    .mapandtext .maptext{
+        width: 100%;   
+    }
+  }
+  @media screen and (max-width: 425px){
+      .imageandvideo{
+          flex-direction: column;
+      }
+      .imageandvideo .imagegallery{
+          width: 100%;
+          margin-bottom: 20px;
+      }
+      .imageandvideo .videoalbum{
+          width: 100%;
+      }
+      .donationformcontainer .imdonationform{
+          overflow-y: scroll;
+          height: 80vh;
+      }
+      .donationformcontainer .flexform{
+          flex-direction: column;
+      }
+      .imdonationform .subfield{
+          width: 100%;
+      }
+  }

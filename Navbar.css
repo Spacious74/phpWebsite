@@ -1,0 +1,350 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+::selection{
+    background-color: rgba(0, 0, 0, 0.801);
+    color: white;
+}
+.anchor{
+    text-decoration: none;
+    color: snow;
+}
+.image{
+    width: 100%;
+}
+html{
+    scroll-behavior: smooth;
+}
+.sidebutton{
+    background-color: rgba(0, 0, 0, 0.233);
+    border: solid 1px black;
+    position:fixed;
+    bottom: 3%;
+    padding: 10px 20px 10px 0px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    width: 320px;
+    backdrop-filter: blur(8px);
+    transform: translateX(-200%);
+    animation: sidecome;
+    transition: all 0.8s ease-in-out;
+    z-index: 32;
+}
+@keyframes sidecome {
+    0%{
+        transform: translateX(-200%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+    
+}
+
+.sidebutton .cross{
+    margin-left: 10px;
+    font-size: 1rem;
+    font-weight: 900;
+    padding: 3px 7px 5px 7px;
+    border: solid 1px black;
+   text-align: center;
+   border-radius: 3px;
+   background-color: rgb(150, 150, 150);
+   transition: all 0.4s ease-in-out;
+}
+.sidebutton .cross:hover{
+    transform: scale(1.01);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.548);
+}
+.sidebutton .cross:active{
+    transform: scale(1);
+}
+.btn-grad2 {background-image: linear-gradient(135deg, #6a83c9 0%, #32d34d  51%, #027fb0  100%)}
+.btn-grad2 {
+   text-align: center;
+   padding: 8px 8px;
+   width: 110px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;        
+   font-weight: 600;
+   font-size: 0.8rem;
+   border-radius: 3px;
+   display: inline-block;
+   border: solid 1px black;
+   margin-left: 10px;
+ }
+ .btn-grad2:hover {
+   background-position: right center; 
+   text-decoration: none;
+   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.548);
+ }
+.donationformcontainer{
+    display: none; 
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 32;
+    left: 0;
+
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.637);
+}
+.donationformcontainer .imdonationform{
+    background-color: #f0f0f0;
+    margin: auto;
+    font-size: 1.3rem;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 85%;
+    border: solid 1px black;
+    border-radius: 3px;
+}
+.donationformcontainer .inputf{
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 10px 18px;
+    border: solid 1px grey;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+}
+.donationformcontainer .labelf{
+    font-family: 'Product Sans';
+}
+.donationformcontainer .formhead{
+    font-style: 2rem;
+    letter-spacing: 5px;
+    font-family: tahoma;
+    font-weight: 900;
+    text-align: center;
+    background-color: cadetblue;
+    border: solid 1px black;
+    border-radius: 3px;
+    color: snow;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.donationformcontainer .flexform{
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}
+.imdonationform .subfield{
+    width: 49%;
+}
+.navbar{
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;   
+    margin: auto;
+    overflow: hidden;
+    position: sticky;
+    top: 0%;
+    z-index: 20;
+    padding: 5px;
+    transition: all 0.3s ease-in-out;
+
+}
+.navbar .leftnav{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.navbar .leftnav .logo{
+    display: inline-block;  
+    width: 3rem;
+    margin-left: 1rem;
+}
+.navbar .leftnav .name{
+    margin-left: 20px;
+    font-size: 30px;
+    font-family: 'josefin sans';
+    font-weight: 900;
+}
+.navbar .list{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    list-style: none;
+    margin: 0px; padding: 0px;
+    font-family: 'Product Sans';
+    width: 50%;
+}
+.navbar li{
+    margin-right: 10px;
+    text-align: center;
+    padding: 0.4rem;
+    font-size: 1rem;
+    width: 90px;
+    display: inline-block;
+    box-sizing: border-box;
+    color: rgb(34, 34, 34);
+    font-weight: 600;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    z-index: 31;
+}
+    .navbar li:hover{
+        box-shadow: 0px 5px 10px  rgba(0, 0, 0, 0.336);
+        background-color: #bce3f1;
+        color: black;
+    }
+.navbar li:active{
+    transform: scale(0.9);
+    box-shadow: none;
+}
+.navbar #profileimg{
+    padding-right: 5px;
+    display: inline;
+}
+.navbar .improfile:hover{
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 2px rgb(124, 203, 223);
+}
+
+.form{
+    display: none;
+}
+.navbar .ham{
+    display: none;
+}
+.navbar .close{
+    display: none;
+}
+.navbar.active{
+    background-color: white;
+    color: black;
+    box-shadow: 0px 5px 5px rgba(29, 29, 29, 0.486);
+    outline: solid 1px grey;
+}
+#toptopage{
+    transform: translateX(200%);
+    padding: 5px;
+    position: fixed;
+    bottom: 3%; right: 2%;
+    cursor: pointer;
+    border: solid 1px black;
+    border-radius: 50%;
+    transition: all 0.4s ease-in-out;
+    z-index: 31;
+}
+@media screen and (max-width: 900px) {
+    .navbar{
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        padding-top: 10px;
+        z-index: 30;
+        background-color: transparent;
+    }
+   .navbar .list{
+       display: none;
+       width: 100%;
+       justify-content: left;
+       flex-direction: column;
+       margin-top: 10px;
+   }
+   .anchor{
+       width: 100%;
+   }
+   .navbar .ham{
+       display: inline-block;
+       margin-right: 1rem;
+       position: absolute;
+       right: 0;
+       top: 0.5rem;
+       padding: 5px;
+       color: rgb(27, 27, 27);
+   }
+   .navbar .leftnav{
+       width: 80%;
+       padding-bottom: 5px;
+   }
+   .list.active{
+       display: flex;  
+   }
+   .navbar .close{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0.5rem;
+    z-index: 30;
+    margin-right: 1rem;
+    text-align: center;
+    font-size: 30px;
+    padding: 5px;
+    transition: all 0.3s ease-in-out;
+    color: rgb(27, 27, 27);
+   }
+   .form .anchor{
+        color: black;
+        font-size: 1.5rem;
+        font-family: 'Product Sans';
+        text-align: center;
+   }
+   .form{
+       width: 80%;
+       background-color: white;
+       position: fixed;
+       top: 36%;
+       margin-left: 10%;
+       border: solid 2px black;
+       box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.637);
+       display: block;
+       border-radius: 5px;
+       transform: translateY(-300%);
+       transition: all 0.4s ease-in-out;
+       z-index: 31;
+   }
+   .formlist #profileimg{
+       text-align: center;
+       display: block;
+       border-bottom: solid 1px grey;
+       padding: 10px;
+       letter-spacing: 2px;
+       font-weight: 600;
+       font-size: 25px;
+       font-family: 'Product Sans';
+   }
+   .formlist li{
+       border-bottom: solid 1px rgb(187, 185, 185);
+       padding: 10px;
+       letter-spacing: 2px;
+       font-weight: 600;
+   }
+   .formlist{
+       list-style: none;
+       padding: 0px;
+       margin: 0px;
+       padding: 10px;
+   }
+   .header{
+       visibility: visible;
+   }
+}
+
+@media screen and (max-width: 425px){
+    .donationformcontainer .imdonationform{
+        overflow-y: scroll;
+        height: 80vh;
+    }
+    .donationformcontainer .flexform{
+        flex-direction: column;
+    }
+    .imdonationform .subfield{
+        width: 100%;
+    }
+}

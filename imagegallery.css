@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+.headingofimage{
+    font-size: 2rem;
+    font-family: tahoma;
+    text-align: center;
+    background-color: cadetblue;
+    padding: 20px;
+    width: 100%;
+    font-weight: 600;
+    position: sticky;
+    top: 0%;
+}
+.mainimage{
+    width: 100%;
+    height: 200px;
+}
+.maintext{
+    font-size: 3em;
+    font-family: 'century gothic';
+    position: absolute;
+    width: 100%;
+    top: 18%;
+    text-align: center;
+    padding: 20px;
+}
+.last{
+    display: flex;
+    flex-direction: column;
+}
+.lasttext{
+    font-size: 3em;
+    font-family: 'century gothic';
+    display: inline-block;
+    padding: 20px;
+    background-color: transparent;
+    z-index: 1;
+    margin-top: -100px;
+    text-shadow: 3px 3px 3px grey;
+}
+
+.imimage{
+    width: 100%;
+    height: 250px;
+    /* border-radius: 6px; */
+    object-fit: cover;
+    border: solid 10px rgb(14, 9, 9);
+    padding: 20px;
+    background-color: white;
+    transition: all 0.4s ease;
+}
+.imimage:hover{
+    box-shadow: 0px 0px 10px 5px rgb(255, 255, 255);
+}
+.tableofimage{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-size: cover;
+}
+.row{
+    display: flex;
+    padding: 20px;
+    padding-top: 0px;
+    width: 100%;
+    align-items: center;
+}
+.row .cell{
+    text-align: center;
+    /* border-radius: 6px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.4s ease;
+    width: 25%;
+    padding: 10px;
+    color: rgb(4, 72, 136);
+}
+
+.caption{
+    font-size: 1.5rem;
+    font-family: 'Product Sans';
+    width: 100%;
+    text-align: center;
+    border: solid 1px black;
+    padding: 15px;
+    margin-top: 5px;
+    background-color: white;
+    /* border-radius: 6px; */
+    /* color: blue; */
+}
+
+@media screen and (max-width: 900px) {
+    .mainimage{
+        display: none;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .row .cell{
+        width: 100%;
+    }
+    .imimage{
+        height: auto;
+    }
+    .maintext{
+        position: static;
+        margin-top: 20px;
+        background-color: cornflowerblue;
+    }
+    .lasttext{
+        margin: 0px;
+        background-color: cornflowerblue;
+        text-shadow: none;
+    }
+}

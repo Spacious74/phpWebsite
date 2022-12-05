@@ -1,0 +1,133 @@
+.footcontainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(20, 21, 37);
+    color: snow;
+    font-family: 'Product Sans';
+}
+.footcontainer .heading{
+    font-size: 1.4rem;
+    padding: 20px;
+    text-align: center;
+}
+.footcontainer .followlinks{
+    width: 30%;
+    background-color: rgb(20, 21, 37);
+    
+    height: 15rem;
+}
+.logo-container{
+    text-align: center;
+    margin-top: 20px;
+}
+.logo-container a{
+    display: inline-block;
+    border-radius: 50%;
+    padding: 8px;
+}
+.logo-container a:hover{
+    box-shadow: inset 0px 0px 10px 1px snow;
+}
+.logo-container .logo{
+    /* margin: 15px; */
+    border-radius: 50%;
+    display: inline;
+}
+.logo-container .logo:active{
+    box-shadow: none;
+}
+.footcontainer .quicklinks{
+    width: 40%;
+    background-color: rgb(20, 21, 37);
+    border-left: solid 2px snow;
+    border-right: solid 2px snow;
+}
+.quicklinks .linkandlogo{
+    display: flex;
+}
+.linkandlogo .links{
+    margin: 0px;
+    font-size: 1.4rem;
+    list-style: none;
+    width: 50%;
+    padding: 10px;
+}
+.linkandlogo .sitelogo{
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+.links a{
+    text-decoration: none;
+    color: grey;
+}
+.links li{
+    border-bottom: solid 1px rgb(20, 21, 37);
+    transform: 0.4s all ease;
+    padding: 10px;
+}
+.links li:hover{
+    border-bottom: solid 1px snow;
+}
+.links a:hover{
+    color: snow;
+}
+.footcontainer .contactus{
+    width: 30%;
+    background-color: rgb(20, 21, 37);
+}
+.contactus .contact{
+    padding: 10px;
+}
+.contactus .address{
+    font-size: 1.3rem;
+    padding: 10px;
+}
+.copyright{
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: tahoma;
+    padding: 10px;
+    border-top: solid 1px grey;
+    background-color: rgb(20, 21, 37);
+    color: snow;
+}
+
+@media  screen and (max-width: 900px) {
+    .footcontainer{
+        flex-direction: column;
+    }
+    .footcontainer .followlinks{
+        width: 100%;
+        height: 150px;
+    }
+    .followlinks .logo-container{
+        margin: 0px;
+    }
+    .footcontainer .quicklinks{
+        width: 100%;
+        border: none;
+        text-align: center;
+        border-top: solid 2px snow;
+        border-bottom: solid 2px snow;
+    }
+    .quicklinks .linkandlogo{
+        flex-direction: column-reverse;
+    }
+    .linkandlogo .sitelogo{
+        width: 100%;
+        text-align: center;
+    }
+    .sitelogo .imglogo{
+        width: 20%;
+    }
+    .linkandlogo .links{
+        width: 100%;
+    }
+    .footcontainer .contactus{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,134 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.alert{
+    position: absolute;
+    top: 2%;
+    left: 0.5% ;
+    width: 96%;
+    font-family: Product Sans;
+    font-weight: 900;
+    text-align: center;
+    background-color: rgb(255, 235, 235);;
+    margin: auto;
+    border: solid 2px rgb(243, 106, 106);
+    border-radius: 6px;
+    font-size: 1.4rem;
+    padding: 1rem;
+    animation: alert 1s forwards;
+    transition: all 1s ease-in-out;
+    animation-delay: 3s;
+    color: black;
+}
+@keyframes alert {
+    0%{
+        transform: translateY(0%);
+    }
+    100%{
+        transform: translateY(-200%);
+    }
+}
+a{
+    text-decoration: none;
+}
+.main{
+    height: 100vh;
+    display: flex;
+    /* margin-top: -5rem; */
+    justify-content: center;
+    align-items: center;
+    background: url('./images/outlinedvectorback.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: color;
+    background-color: rgba(255, 255, 255, 0.699);
+}
+.main .text{
+    font-size: 3rem;
+    font-family: century gothic;
+    font-weight: 900;
+    width: 50%;
+    margin: auto;
+    /* padding: 1rem; */
+}
+.gradient-text{
+    background: -webkit-linear-gradient(rgb(245, 47, 47), rgb(29, 142, 235));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.main .imagecontainer{
+    width: 50%;
+    text-align: center;
+}
+.imagecontainer .mainimage{ 
+    width: 80%;
+    background-color: transparent;
+}
+
+.btn-grad {background-image: linear-gradient(to right, #E55D87 0%, #5f68e4  51%, #E55D87  100%)}
+.btn-grad {
+   margin-right: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 4px;
+   display: block;
+   border: none;
+    margin-top: 20px;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+   box-shadow: 0px 10px 20px rgb(168, 216, 235);
+ }
+.form{
+    border-radius: 6px;
+    width: 70%;
+}
+.form .inputtext{
+    font-size: 1.5rem;
+    font-family: Product Sans;
+}
+.form .inputfield{
+    font-size: 1.3rem;
+    padding: 8px 10px;
+    width: 95%;
+    border-radius: 4px;
+    border: solid 1px grey;
+}
+.buttons{
+    display: flex;
+}
+
+
+@media screen and (max-width: 900px){
+
+    .main{
+        flex-direction: column;
+    }
+    .main .imagecontainer{
+        width: 70%;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .main .text{
+        width: 80%;
+    }
+    .text .bigtext{
+        text-align:  center;
+    }
+    .form{
+        width: 100%;
+    }
+    .buttons{
+        justify-content: center;
+    }
+}

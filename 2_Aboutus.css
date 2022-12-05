@@ -1,0 +1,341 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+::selection{
+    background-color: rgba(0, 0, 0, 0.801);
+    color: white;
+}
+.anchor{
+    text-decoration: none;
+    color: snow;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+.maincontainer{
+    margin-top: -60px;
+    padding-top: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background: url('./images/outlinedvectorback.jpg');
+    background-size: 100%;
+    background-blend-mode: color;
+    background-color: rgba(255, 255, 255, 0.603);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.maincontainer .imagecontainer{
+    width: 40%;
+}
+.imagecontainer .imimage{
+    width: 100%;
+    background-color: transparent;
+}
+.maincontainer .maintext{
+    width: 60%;
+    padding: 4rem;
+    text-align: justify;
+}
+.maintext .quotation{
+    font-size: 2rem;
+    font-family: consolas;
+}
+.fancy-underline {
+    background-image: linear-gradient(120deg, #77A1D3,#79CBCA,#75eb8f 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 1em;
+    background-position: 0 50%;
+    transition: background-size 0.25s ease-in;
+  }
+
+.fancy-underline:hover {
+    background-size: 100% 88% !important;
+}
+
+.abouthead{
+    font-size: 3rem;
+    font-family: century gothic;
+    font-weight: 500;
+}
+.aboutuscont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.aboutuscont .textofabout{
+    padding: 30px;
+    width: 70%;
+    font-size: 1rem;
+    font-family: 'Product Sans';
+}
+.aboutuscont .imageofabout{
+    padding: 30px;
+    text-align: center;
+}
+.imageofabout .image{
+    width: 80%;
+    border: solid 1px black;
+    border-radius: 50%;
+    box-shadow: 0px 30px 40px rgba(48, 194, 35, 0.404);
+}
+.imageofabout .image2{
+    display: none;
+}
+
+
+.growthcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.growthcontainer .growthimage{
+    width: 40%;
+    padding: 30px;
+}
+.growthcontainer .growthtext{
+    width: 60%;
+    padding: 30px;
+    font-size: 1rem;
+    font-family: 'Product Sans';
+}
+.growthimage .gimage{
+    width: 100%;
+}
+
+.verifyhead{
+    font-size: 2.4rem;
+    font-family: century gothic;
+    font-weight: 600;
+    text-align: center;
+}
+.teammembers{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+.teammembers .card{
+    border: solid 1px black;
+    border-radius: 6px;
+    width: 20%;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+.teammembers .card:hover{
+    box-shadow: 0px 20px 40px rgba(4, 0, 252, 0.322);
+}
+.card .cardtext{
+    padding: 10px;
+    font-family: 'Product Sans';
+}
+.cardtext h2{
+    font-family: trebuchet ms;
+}
+.card .cardimg{
+    border: solid 1px grey;
+    border-radius: 50%;
+}
+
+
+.footcontainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(20, 21, 37);
+    color: snow;
+    font-family: 'Product Sans';
+}
+.footcontainer .heading{
+    font-size: 1.4rem;
+    padding: 20px;
+    text-align: center;
+}
+.footcontainer .followlinks{
+    width: 30%;
+    background-color: rgb(20, 21, 37);
+    
+    height: 15rem;
+}
+.logo-container{
+    text-align: center;
+    margin-top: 20px;
+}
+.logo-container a{
+    display: inline-block;
+    border-radius: 50%;
+    padding: 8px;
+}
+.logo-container a:hover{
+    box-shadow: inset 0px 0px 10px 1px snow;
+}
+.logo-container .logo{
+    /* margin: 15px; */
+    border-radius: 50%;
+    display: inline;
+}
+.logo-container .logo:active{
+    box-shadow: none;
+}
+.footcontainer .quicklinks{
+    width: 40%;
+    background-color: rgb(20, 21, 37);
+    border-left: solid 2px snow;
+    border-right: solid 2px snow;
+}
+.quicklinks .linkandlogo{
+    display: flex;
+}
+.linkandlogo .links{
+    margin: 0px;
+    font-size: 1.4rem;
+    list-style: none;
+    width: 50%;
+    padding: 10px;
+}
+.linkandlogo .sitelogo{
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+.links a{
+    text-decoration: none;
+    color: grey;
+}
+.links li{
+    border-bottom: solid 1px rgb(20, 21, 37);
+    transform: 0.4s all ease;
+    padding: 10px;
+}
+.links li:hover{
+    border-bottom: solid 1px snow;
+}
+.links a:hover{
+    color: snow;
+}
+.footcontainer .contactus{
+    width: 30%;
+    background-color: rgb(20, 21, 37);
+}
+.contactus .contact{
+    padding: 10px;
+}
+.contactus .address{
+    font-size: 1.3rem;
+    padding: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  
+
+   .maincontainer{
+       flex-direction: column;
+   }
+   .maincontainer .imagecontainer{
+       width: 100%;
+   }
+   .maincontainer .maintext{
+       width: 100%;
+       text-align: justify;
+   }
+   .aboutuscont{
+       flex-direction: column-reverse;
+   }
+   .aboutuscont .imageofabout{
+       width: 100%;
+       text-align: center;
+       padding: 0px;
+       background: url('./images/whitewallpaper.jpg');
+       background-size: cover;
+   }
+   .imageofabout .image{
+       display: none;
+   }
+   .imageofabout .image2{
+       display: block;
+       width: 100%;
+
+   }
+   .caption{
+       display: none;
+   }
+   .imageofabout .image{
+       width: 50%;
+   }
+   .aboutuscont .textofabout{
+       width: 100%;
+       /* margin-top: -50px; */
+       z-index: 3;
+   }
+   .imageofabout .image{
+       background-color: transparent;
+   }
+   
+    .growthcontainer{
+        flex-direction: column;
+    }
+    .growthcontainer .growthtext{
+        width: 100%;
+    }
+    .growthcontainer .growthimage{
+        width: 100%;
+    }
+
+    .teammembers{
+        flex-direction: column;
+    }
+    .teammembers .card{
+        width: 90%;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .card .cardimg{
+        width: 30%;
+        border-radius: 10px;
+    }
+    .footcontainer{
+        flex-direction: column;
+    }
+    .footcontainer .followlinks{
+        width: 100%;
+        height: 150px;
+    }
+    .followlinks .logo-container{
+        margin: 0px;
+    }
+    .footcontainer .quicklinks{
+        width: 100%;
+        border: none;
+        text-align: center;
+        border-top: solid 2px snow;
+        border-bottom: solid 2px snow;
+    }
+    .quicklinks .linkandlogo{
+        flex-direction: column-reverse;
+    }
+    .linkandlogo .sitelogo{
+        width: 100%;
+        text-align: center;
+    }
+    .sitelogo .imglogo{
+        width: 20%;
+    }
+    .linkandlogo .links{
+        width: 100%;
+    }
+    .footcontainer .contactus{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
